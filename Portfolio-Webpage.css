@@ -1,0 +1,166 @@
+*,::after,::before{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+body{
+ width:100%;height:100%;
+margin:0px;
+padding:0px;
+}
+#navbar,#navbar ul {
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap; 
+  justify-content:flex-end;
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  min-height:50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #124E66;
+  font-family: Raleway,sans-serif
+;
+font-size:15px;
+z-index:1;
+}
+
+#navbar li {
+  padding-right:20px;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#welcome-section{
+  width:100%;
+  height:100vh;
+  background-color:#D3D9D5;
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap; 
+  align-content:center;
+  justify-content:center;
+  
+}
+#welcome-section h1{
+  text-align:center;
+  font-family: Raleway,sans-serif
+;
+font-size:20px;
+font-weight:bold;
+}
+#welcome-section h3{
+  margin-top:5px;
+  text-align:center;
+  font-family:Raleway,sans-serif
+;
+font-size:15px;
+font-style:italic;
+color:#EE4B2B;
+}
+#projects{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content:center;
+justify-content:space-evenly;
+  height:auto;
+  width:100%;
+  padding:10px;
+  background:#2F3943;
+}
+.project-tile{
+  width:370px;
+  padding:10px;
+  margin:20px;
+}
+.project-tile h1{
+  font-size:24px;
+  font-family: Raleway,sans-serif
+;
+text-align:center;
+background:#748D92;
+padding:10px;
+color:#F0F8FF;
+}
+#profile-link{
+  text-decoration:none;
+}
+#profile-link img{
+  width:350px;
+  height:300px;
+border-radius:5px 5px 0px 0px;
+}
+#profile-link p{
+  font-family: Raleway,sans-serif
+;
+font-size:20px;
+  
+  height:50px;
+  text-align:center;
+  padding:10px;
+  font-weight:bold;
+  background-color:#D3D9D5;
+  border-radius:0px 0px 5px 5px;
+}
+
+.project-tile:nth-child(1) {
+  width: 100%;
+  text-decoration:none;
+}
+
+#reachme{
+ display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content:center;
+justify-content:space-evenly;
+  height:auto;
+  width:100%;
+  padding:30px;
+  border:1px solid black;
+  color:white;background-color:#748D92;
+}
+#reachme>div:first-child {
+  flex: 0 1 100%;
+  text-align:center;
+  padding:50px;
+font-family:Poppins, sans-serif;
+font-size:18px;
+}
+#reachme>div{
+  padding:30px;
+  font-family:Poppins, sans-serif;font-size:18px;
+}
+#reachme a{
+  text-decoration:none;
+  color:white;
+}
+#footer{
+  background:#212A31;
+  color:white;
+  font-family: Raleway, sans-serif;
+  font-size:10px;
+  padding:30px;
+  text-align:center;
+}
+@media(min-width:700px) and (max-width:1800px){
+  #welcome-section h1{
+font-size:40px;
+}
+#welcome-section h3{
+  font-size:20px;
+}
+#navbar li a {
+  font-size:20px;
+}
+}
